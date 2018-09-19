@@ -95,12 +95,12 @@ end
 def players
   home_players = game_hash[:home][:players]
   away_players = game_hash[:away][:players]
-  home_players.merge(away_players)
+  all_players = home_players.merge(away_players)
 end
 
 
 def num_points_scored(player_name)
-  find_player(player_name)[:points]
+  player(player_name)[:points]
 end
         
 
