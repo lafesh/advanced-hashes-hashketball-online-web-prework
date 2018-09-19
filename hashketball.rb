@@ -10,9 +10,9 @@ def game_hash
                                       assists: "12",
                                       steals: "3",
                                       blocks: "1",
-                                      slam_dunks:
-                                      
-          },},},
+                                      slam_dunks: "1"},
+                    },                   
+          },
     away: {team_name: "team name", 
           colors: [team colors], 
           players: {"player name" => {number:,
@@ -22,9 +22,9 @@ def game_hash
                                       assists:,
                                       steals:,
                                       blocks:,
-                                      slam_dunks:
-                                      
-          },},}
+                                      slam_dunks:},
+                    },                   
+          }
   }
 end 
 
