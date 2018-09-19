@@ -108,9 +108,10 @@ def shoe_size(player_name)
 end
 
 def team_colors(team_name)
+  new_array = []
  game_hash.each do |location, stats|
    if location == team_name
-     
+     new_array << 
  end 
 end 
 
