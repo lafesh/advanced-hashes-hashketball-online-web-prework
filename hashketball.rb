@@ -96,7 +96,9 @@ def num_points_scored(players_name)
   game_hash.each do |location,team_data|
     team_data.collect do |attribute,data|
       if attribute[players_name]
+        data.collect do |points|
           points
+        end
       end
     end
   end
