@@ -99,8 +99,10 @@ def players
 end
 
 def num_points_scored(players_name)
-    players.select(players_name) do |name, points|
+    players.select do |name, points|
+      if name = players_name
       return points
+      end
     end
 end 
 
