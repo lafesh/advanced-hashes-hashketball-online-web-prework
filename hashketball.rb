@@ -92,11 +92,12 @@ def game_hash
   }
 end 
 
-def players(player_name)
+def players(player_name, team_name)
   home_players = game_hash[:home][:players]
   away_players = game_hash[:away][:players]
   all_players = home_players.merge(away_players)
   all_players[player_name]
+  all_players[team_name]
 end
 
 def num_points_scored(player_name)
@@ -132,15 +133,8 @@ def team_names
 end 
 
 def player_numbers(team_name)
-  new_array = []
-  game_hash.each do |key, location|
-    location.each do |names, actual|
-      if names == :team_name
-        new_array << game_hash[key][:number]
-      end
-    end
-  end
-  new_array
+  
+  players(team_name):number
 end 
 
         
