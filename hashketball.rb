@@ -136,7 +136,7 @@ def player_numbers(team_name)
   game_hash.each do |key, location|
     location.each do |names, actual|
       if names == :team_name
-        new_array << game_hash[key][location][:number]
+        new_array << game_hash[key][location][names][actual][:number]
       end
     end
   end
