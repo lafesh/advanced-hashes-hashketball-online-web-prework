@@ -110,9 +110,10 @@ end
 def team_colors(team_name)
   new_array = []
  game_hash.each do |location, stats|
-   
-   if location == team_name
-     new_array << stats
+   stats.each do |key, value|
+    if key == team_name
+     new_array << value
+    end
    end
  end 
  new_array.flatten
