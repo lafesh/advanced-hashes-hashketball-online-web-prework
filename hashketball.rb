@@ -139,7 +139,7 @@ def players_new(team_name)
 end
 
 def player_numbers(team_name)
-  
+  if 
   players_new(team_name)[:number]
 end 
 
