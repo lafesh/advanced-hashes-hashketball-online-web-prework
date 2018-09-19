@@ -108,11 +108,10 @@ def shoe_size(player_name)
 end
 
 def team_colors(team_name)
- home_team = game_hash[:home]
- away_team = game_hash[:away]
- both_teams = home_team.merge(away_team)
- both_teams(team_name)[:colors]
- 
+ game_hash.each do |location, stats|
+   if location == team_name
+     
+ end 
 end 
 
         
