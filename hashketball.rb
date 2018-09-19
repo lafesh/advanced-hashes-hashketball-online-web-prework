@@ -147,7 +147,7 @@ def player_numbers(team_name)
       end 
     end 
   end 
-  new_array.flatten
+  new_array
 end 
 
         
