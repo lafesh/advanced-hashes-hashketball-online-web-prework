@@ -93,8 +93,8 @@ def game_hash
 end 
 
 def num_points_scored(players_name)
-  players_name = :players
-  game_hash[:players].fetch(:points)
+  players_name = :players.find
+  :players.fetch(:points)
 end 
 
 
