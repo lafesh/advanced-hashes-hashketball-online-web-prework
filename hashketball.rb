@@ -128,7 +128,7 @@ def team_names
       end
     end
   end
-  new_array.flatten
+  new_array
 end 
 
         
