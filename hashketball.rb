@@ -94,7 +94,7 @@ end
 
 def num_points_scored(players_name)
   players_name = :players
-  :players.fetch(:points)
+  game_hash[:players].fetch(:points)
 end 
 
 
