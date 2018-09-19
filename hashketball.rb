@@ -131,6 +131,18 @@ def team_names
   new_array
 end 
 
+def player_numbers(team_name)
+  new_array = []
+  game_hash.each do |key, location|
+    location.each do |names, actual|
+      if names == :team_name
+        new_array << game_hash[key][:number]
+      end
+    end
+  end
+  new_array.flatten
+end 
+
         
 
 
