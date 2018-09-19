@@ -134,7 +134,7 @@ end
 
 def player_numbers(team_name)
   
-  players(team_name):number
+  players(team_name)[:number]
 end 
 
         
