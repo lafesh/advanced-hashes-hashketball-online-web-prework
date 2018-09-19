@@ -101,8 +101,7 @@ end
 def num_points_scored(players_name)
     players.select do |name, points|
       if name = players_name
-       points.select do |score|
-         if score = :points
+        if points = :points
           score
         end
        end 
