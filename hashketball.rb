@@ -98,15 +98,11 @@ def players
   home_players.merge(away_players)
 end
 
-def num_points_scored(players_name)
-    game_hash.each do |location, stats|
-      stats.select do |name, points|
-        if name = players_name
-          points
-        end
-      end
-    end
-end 
+
+def num_points_scored(player_name)
+  find_player(player_name)[:points]
+end
+        
 
 
 
