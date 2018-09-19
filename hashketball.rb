@@ -123,7 +123,7 @@ def team_names
   new_array = []
   game_hash.each do |key, location|
     location.each do |names, actual|
-      if names == :team_names
+      if names == :team_name
         new_array << actual
       end
     end
