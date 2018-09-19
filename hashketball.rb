@@ -109,7 +109,7 @@ end
 
 def team_colors(team_name)
   new_array = []
- game_hash.each do |location, stats|
+  game_hash.each do |location, stats|
    stats.each do |key, value|
     if value == team_name
      new_array << game_hash[location][:colors]
@@ -117,6 +117,16 @@ def team_colors(team_name)
    end
  end 
  new_array.flatten
+end 
+
+def team_names
+  new_array = []
+  game_hash.each do |key, location|
+    location.each do |names, actual|
+      new_array << actual
+    end
+  end
+  new_array.flatten
 end 
 
         
