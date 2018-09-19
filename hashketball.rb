@@ -99,10 +99,11 @@ def players
 end
 
 def num_points_scored(players_name)
-    players.select do |name, points|
-      if name = players_name
+    game_hash.each do |location, stats|
+      stats.select do |name, points|
+        if name = players_name
           points
-        
+        end
       end
     end
 end 
