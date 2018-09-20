@@ -141,6 +141,14 @@ def player_numbers(team_name)
         end
       end
     end
+  else 
+    game_hash[:away][:players].each do |name, stats|
+      stats.each do |label, value|
+        if label == :number
+          new_array << value
+        end
+      end
+    end
   end
 end 
 
