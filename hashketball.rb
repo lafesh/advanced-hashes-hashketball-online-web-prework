@@ -156,6 +156,14 @@ end
 def player_stats(player_name)
   players(player_name)
 end
+
+def big_shoe_rebound
+  new_array = []
+  game_hash[:home][:players][:shoe].select do |size|
+    if size >
+  end 
+  if game_hash[:home][:players][:shoe]
+end 
         
 
 
