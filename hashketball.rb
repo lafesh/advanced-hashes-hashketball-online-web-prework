@@ -134,7 +134,12 @@ end
 def player_numbers(team_name)
   new_array = []
   if game_hash[:home][:team_name] == team_name
-    game_hash.each do 
+    game_hash[:home][:players].each do |name, stat|
+      if stat == [:number]
+        new_array << [:number]
+      end
+    end
+  end
 end 
 
         
